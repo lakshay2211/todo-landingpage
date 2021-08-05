@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Rubik', sans-serif;
+}
+body{
+    width:1440px;
+}
+
+
+/* Commonly used text styling classes */
+.para-style{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.para-style-two{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.para-style-three{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight:500;
+}
+
+
+/* styling for the header of the webpage */
+.heading-style{
+    font-size: 48px;
+    font-weight:800;
+    line-height:64px;
+}
+#first-page{
+    height:866px;
+    width: 1440px;
+    background-image: url(../images/Background.png);
+    background-size: cover;
+}
+header{
+    height:70px;
+    display: flex;
+}
+#site-icon{
+    height:32px; 
+    width:32px;
+    margin-left:165px;
+}
+header > *{
+    margin:auto 0;
+}
+.app-image{
+    width:135px;
+    height:40px;
+    margin-left:15px;
+}
+header h1{
+    margin-left: 10px; 
+    font-size: 20px; 
+    font-weight: 700px;
+}
+header ul{
+    margin:auto 145px auto 90px;
+}
+header ul li{
+    float: left;
+    list-style-type: none;
+    margin:0 36px 0 2px;
+}
+header ul li img{
+    height:10px;
+    width:10px;
+}
+
+
+/* styling for introductory part of the webpage*/
+#intro{
+    display: flex;
+    
+}
+#intro-content{
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 98px;
+    margin:168px 0 0 163px;
+}
+#intro-content button{
+    background-color: #8C30F5;
+    color:white;
+    padding:12px 35px;
+    border-radius: 6px;
+    border-width: 0px;
+}
+#phone{
+    width:400px;
+    height:640px;
+    margin: 85px 0 0 100px;
+}
+
+
+/*Styling for the carousel section*/
+#carousel{
+    width:1080px;
+    margin:0 auto;
+    margin-top:40px;
+}
+#carousel button{
+    margin-top:-15px;
+}
+.glider{
+    width: 900px;
+    padding:15px;
+    margin:auto 0;
+    border-top:1px solid #C0CCDA;
+    border-bottom:1px solid #C0CCDA;
+}
+
+
+/*styling for features section of the webpage*/
+#features{
+    text-align: center;
+    width:1110px;
+    height:610px;
+    margin: 0 auto;
+    margin-top:100px;
+}
+#features h1{
+    height:64px;
+}
+#features p{
+    margin-top:0px;
+}
+#feature-cards{
+    margin: 17px auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+.feature-card{
+    width:350px;
+    height:140px;
+    margin: 25px 20px 45px 0;
+}   
+.feature-card>*{
+    margin-bottom:10px;
+}
+.feature-card img{
+    width:32px;
+    height:32px;
+    margin-bottom: 20px;
+}
+.feature-card h3{
+    font-size:24px;
+    font-weight: 600px;
+    line-height: 32px;
+}
+
+
+/*Styling for review section of the webpage*/
+#review{
+    background-color: #D5FAFC;
+    height:900px;
+    position: relative;
+}
+#quote{
+    position:absolute;
+    height:120px;
+    width: 140px;
+    left:165px;
+    top:64px;
+}
+#review-container{
+    display: flex;
+    width: 920px;
+    margin:0 auto;
+    flex-wrap: wrap;
+    
+}
+#review-intro{
+    width: 445px;
+    height: 128px;
+    margin-top:120px;
+}
+#review-intro h3{
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 64px;
+}
+#review-intro p{
+    margin-top:10px;
+}
+#review-airbnb{
+    width: 445px;
+    height: 340px;
+    background-color: white;
+    margin: 168px 0 0 30px;
+}
+.review-logo{
+    width: 130px;
+    height: 40px;
+    margin:32px 0 0 30px;
+}
+.airbnb-comment{
+    display: flex;
+    margin: 32px 32px 24px 32px;
+}
+.airbnb-comment img{
+    width: 12px;
+    height: 14px;
+}
+.airbnb-comment p{
+    height:128px;
+    width: 349px;
+    margin-left: 16px;
+    margin-top:-5px;
+}
+.review-author{
+    margin: 28px 60px;
+}
+.review-author h3{
+    font-size:18px;
+    font-weight:700;
+}
+.review-author p{
+    color:#969BAB;
+}
+#review-hubspot{
+    margin-top:-200px;
+    margin-left: 100px;
+    width: 350px;
+    height:468px;
+    background-color: white;
+}
+.hubspot-comment{
+    display: flex;
+    margin: 32px 32px 24px 32px;
+}
+.hubspot-comment img{
+    width: 12px;
+    height: 14px;
+}
+.hubspot-comment p{
+    height:254px;
+    width: 256px;
+    margin-left: 16px;
+}
+#review-bms{
+    height:276px;
+    width: 350px;
+    background-color: white;
+    margin: 32px 0 0 25px;
+}
+.bms-comment{
+    display: flex;
+    margin: 32px 32px 24px 32px;
+    
+}
+.bms-comment img{
+    width: 12px;
+    height: 14px;
+}
+.bms-comment p{
+    height:64px;
+    width: 254px;
+    margin-left: 16px;
+    margin-top:-5px;
+}
+
+
+/*Styling for stats section of the webpage*/
+#stats{
+    height: 332px;
+    display: flex;
+    margin: -30px 165px 0 165px;
+}
+#stats-content{
+    width: 580px;
+    height: 130px;
+    margin-top: 72px;
+}
+#stats-content p{
+    margin-top:-15px;
+}
+#stats-num{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    width:480px;
+    height:200px;
+    justify-content: space-between;
+}
+#stats-card{
+    width:190px;
+    height: 63px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#stats-figures{
+    margin-left:20px;
+    display: flex;
+    flex-direction: column;
+}
+#stats-figures h1{
+    font-size:28px;
+    font-weight: 700;
+    line-height: 40px;
+}
+#stats-card img{
+    height:30px;
+    width: 30px;
+    margin: auto 0;
+}
+#stats-card p{
+    margin-top:-10px;
+}
+
+/*Styling for sample mockup section of the webpage*/
+#sample{
+    height: 660px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#sample-image{
+    height: 540px;
+    width: 540px;
+    margin:90px 78px 0 165px;
+}
+#sample-content{
+    width: 500px;
+    margin-top:185px;
+}
+#sample-content h1{
+    font-weight: 800;
+    font-size: 40px;
+}
+#sample-content p{
+    height:160px;
+    width:440px;
+    margin-top:35px;     
+}
+#sample-content button{
+    color:#8C30F5;
+    border:0px;
+    background-color: white;
+    margin-top:35px;
+}
+
+
+/*Styling for footer section of the webpage*/
+footer{
+    height:280px;
+    background-color:#0B0D17;
+    color:#D9DBE1;
+    display: flex;
+    margin-top: 35px;
+}
+#footer-left{
+    margin:58px 0 0 165px;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline;
+    margin-right:24px;
+}
+#footer-left img{
+    height: 32px;
+    width: 32px;
+}
+#footer-left ul{
+    margin-top:19px;
+}
+#footer-left p{
+    margin-top:23px;
+}
+#footer-right{
+    margin:53px 0 0 440px;
+}
+#footer-right ul li{
+    list-style-type: none;
+    display: block;
+    margin-top:14px;
+}
+
+
+/*Styling changes for webpage when portview width is less then 1280px*/
+@media only screen and (max-width:1280px){
+    body{
+        width:100%;
+    }
+    #first-page{
+        width:100%;
+        height:auto;
+    }
+    header ul{
+        margin-right:10%;
+    }
+    header{
+        padding:0 6%;
+    }
+    #site-icon{
+        margin:auto 0;
+    }
+    #intro-content{
+        margin-left: 6%;
+    }
+    #phone img{
+        height:600px;
+    }
+    #sample-image,#sample-image img{
+        width:450px;
+        height: 450px;
+    }
+    #sample-image img{
+        margin: auto;
+    }
+    #sample-content{
+        margin:auto;
+    }
+    #quote{
+        left:90px;
+    }
+    
+    #footer-left{
+        margin-left:0;
+        padding:0 4% 8px 4%;
+
+    }
+}
+
+
+/*Styling changes for webpage when portview width is less then 1024px*/
+@media only screen and (max-width:1024px){
+    header ul{
+        display: none;
+    }
+    header h1{
+        margin-right:40%; 
+    }
+    header{
+        padding:0 10%;
+    }
+    #intro-content{
+        font-size:42px;
+        line-height:50px;
+    }
+    .heading-style{
+        font-size:25px;
+    }
+    #carousel{
+        width: 90%;
+    }
+    .glider{
+        width:80%;
+    }
+    .para-style{
+        font-size: 14px;
+    }
+    .para-style-two{
+        font-size: 12px;;
+    }
+    .para-style-three{
+        font-size: 14px;
+    }
+    #features{
+        width: 100%;
+        height:auto;
+    }
+    #feature-cards{
+        flex-direction: column;
+        width:80%;
+        margin: 0 auto;
+    }
+    .feature-card{
+        margin:15px auto;
+        width:300px;
+        height:auto;
+    }
+    .feature-card h3{
+        font-size: 20px;
+    }
+    .feature-card img{
+        margin-bottom:10px;
+        height:20px;
+        width: 20px;
+    }
+    #review{
+        height:auto;
+    }
+    #review-container{
+        flex-direction: column;
+        margin:0 auto;
+        width:90%;
+    }
+    #review-intro{
+        margin:100px auto 30px auto;
+        width:400px;
+    }
+    #review-intro h3{
+        font-size:32px;
+    }
+    #review-airbnb,#review-hubspot,#review-bms{
+        width:400px;
+        margin:20px auto;
+    }
+    #stats{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin:0 auto;
+
+    }
+    #stats-content{
+        width:80%;
+        margin: 0 auto;
+        height: auto;
+        text-align: center;
+    }
+    #stats-num{
+        margin-top: 40px;
+        width:60%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    #stats-card{
+        width:200px;
+        margin:auto 0;
+        margin-left:5%;
+    }
+    #stats-figures h1{
+        font-size:20px;
+        font-weight: 700;
+        line-height: 20px;
+        margin:10px auto;
+    }
+    #stats-card img{
+        height:20px;
+        width: 20px;
+        margin: auto 0;
+    }
+    #sample{
+        width: 100%;
+        height: auto;
+        padding:40px 0;
+    }
+    #sample-content{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #sample-content p{
+        margin: 0 auto;
+    }
+    #sample-image{
+        display: none;
+    }
+    #sample-content button img{
+        height:10px;
+        width: 15px;
+    }
+    #footer-right{
+        margin-left:10%;    
+    }
+}
+
+
+/*Styling changes for webpage when portview width is less then 600px*/
+@media only screen and (max-width:600px){
+    .app-image,#phone{
+        display: none;
+    }   
+    #intro-content{
+        margin:100px auto 40px auto;
+    }
+    #footer-right{
+        display: none;
+    }
+    .para-style-three,.para-style-two{
+        font-size: 10px;
+    }
+    #stats-num{
+        width:100%;
+    }
+}
